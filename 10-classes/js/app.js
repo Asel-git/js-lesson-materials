@@ -31,31 +31,52 @@
 // console.log(aisha.greet());
 // console.log(aisha.greet === usuf.greet);
 // **************************************************************************
+// Exercise - 1
+// class Restaurant {
+//   constructor(name, cuisineType, served = 0) {
+//     this.name = name;
+//     this.cuisineType = cuisineType;
+//     this.served = served;
+//   }
+//   showInfo() {
+//     return `${this.name} is a restaurant ${this.cusineType} meal!`;
+//   }
+//   serve() {
+//     return this.served++;
+//   }
+//   setServed(amountServed) {
+//     this.served += amountServed;
+//   }
+//   showTotalServed() {
+//     return `Total number of ${this.served} visitors served!`;
+//   }
 
-class Restaurant {
-  constructor(name, cusineType) {
-    this.name = name;
-    this.cusineType = cusineType;
-  }
-  showInfo() {
-    return `${this.name} is a restaurant ${this.cusineType} meal!`;
-  }
-  isOPen() {
-    let currentHour = new Date().getHours();
-    let currentDay = new Date().getDay;
-    // console.log(currentHour);
+//   isOPen() {
+//     let currentHour = new Date().getHours();
+//     let currentDay = new Date().getDay;
+//     // console.log(currentHour);
 
-    if (currentDay === 6 || currentDay === 0) {
-      return `${this.name} is closed`;
-    } else {
-      if (currentHour > 9 && currentHour < 22) {
-        return `${this.name} is open`;
-      } else {
-        return `${this.name} is closed`;
-      }
-    }
-  }
-}
-const beshBarmak = new Restaurant(" Besh Barmak", "Kyrgyz");
-console.log(beshBarmak.showInfo());
-console.log(beshBarmak.isOPen());
+//     if (currentDay === 6 || currentDay === 0) {
+//       return `${this.name} is closed`;
+//     } else {
+//       if (currentHour > 9 && currentHour < 22) {
+//         return `${this.name} is open`;
+//       } else {
+//         return `${this.name} is closed`;
+//       }
+//     }
+//   }
+// }
+// const beshBarmak = new Restaurant(" Besh Barmak", "Kyrgyz");
+// const doyumKebap = new Restaurant(" Doyum kebap", "Turkish");
+// console.log(beshBarmak.showInfo());
+// console.log(beshBarmak.isOPen());
+// console.log(beshBarmak.serve());
+// console.log(beshBarmak.showTotalServed());
+// console.log(beshBarmak.setServed(50));
+// console.log(beshBarmak.showTotalServed());
+
+// console.log(doyumKebap.serve());
+// console.log(doyumKebap.showTotalServed());
+// console.log(doyumKebap.setServed(30));
+// console.log(doyumKebap.showTotalServed());
