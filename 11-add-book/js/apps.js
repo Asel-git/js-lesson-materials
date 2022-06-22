@@ -51,6 +51,7 @@ document.getElementById("book-form").addEventListener("submit", (e) => {
   //   Validate
   if (title === "" || author === "" || isbn === "") {
     ui.showAlert("Please fill in all fields!", "error");
+    ui.clearFields();
   } else {
     ui.addBookList(book);
     ui.showAlert("Book added!", "success");
